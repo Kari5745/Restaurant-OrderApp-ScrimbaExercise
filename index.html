@@ -1,0 +1,42 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+	   <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+		<header>
+			<h1>Jimmy's Burger</h1>
+			<h2>The best burgers and pizzas in town</h2>
+		</header>
+		<main>
+			<section id="menu-sct">
+			</section>
+			<section id="checkout-section">
+			    <div id="order">
+				    <h3 class="biggest-font">Your order</h3>
+					<div id="order-summary">
+					</div>
+					<div id="total">
+						<p class="biggest-font">Total Price:</p>
+						<p id="total-price" class="big-font"></p>
+					</div>
+					<button id="complete-btn" disabled>Complete Order</button>
+				</div>
+			</section>
+			<article>
+				<form id="card-form">
+					<h3>Enter Card details</h3>
+					<input type="text" placeholder="Enter your name" name="customerName" required>
+					<input type="text" placeholder="Enter card number" name="customerCard" pattern="[0-9]+" required>
+					<input type="text" placeholder="Enter cvv" name="customercvv" pattern="[0-9]+" minlength="3" maxlength="4" required>
+					<button id="pay-btn" type="submit">Pay</button>
+				</form>
+			</article>
+		</main>
+
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
